@@ -3,7 +3,9 @@
 
     <featureManager>
     	<feature>jaxRs-2.1</feature>
-        <!-- <feature>mpRestClient-1.2</feature> -->
+        <feature>mpRestClient-1.2</feature>
+        <feature>mpOpenapi-1.1</feature>
+        <feature>cdi-2.0</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
