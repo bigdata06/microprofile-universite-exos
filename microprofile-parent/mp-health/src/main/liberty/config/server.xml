@@ -3,7 +3,8 @@
 
     <featureManager>
     	<feature>jaxRs-2.1</feature>
-        <!-- <feature>mpHealth-1.0</feature> -->
+    	<feature>cdi-2.0</feature>
+        <feature>mpHealth-1.0</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
