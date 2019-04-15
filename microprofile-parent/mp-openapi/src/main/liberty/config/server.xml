@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="mpServer">
+
+    <featureManager>
+    	<feature>jaxRs-2.1</feature>
+        <!-- <feature>mpOpenapi-1.1</feature> -->
+    </featureManager>
+
+    <httpEndpoint id="defaultHttpEndpoint"
+                  httpPort="${httpPort}"
+                  httpsPort="${httpsPort}"/>
+
+    <application location="${project.build.directory}/${project.build.finalName}.war" context-root="/"/>
+
+</server>
