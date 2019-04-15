@@ -109,7 +109,7 @@
 								<phase>package</phase>
 								<goals>
 									<goal>create-server</goal>
-									<goal>install-apps</goal>
+									<!-- <goal>install-apps</goal> -->
 									<goal>package-server</goal>
 								</goals>
 								<configuration>
