@@ -3,7 +3,7 @@
 
     <featureManager>
     	<feature>jaxRs-2.1</feature>
-        <!-- <feature>mpOpenapi-1.1</feature> -->
+        <feature>mpOpenapi-1.1</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"

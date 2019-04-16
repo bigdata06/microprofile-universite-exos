@@ -10,6 +10,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+
 @Path("/hello")
 public class HelloEndPoint {
 
@@ -23,6 +25,8 @@ public class HelloEndPoint {
 	@GET
 	@Path("/json")
 	@Produces(MediaType.APPLICATION_JSON)
+	@APIResponse(responseCode="200", description="Indivu trouvée dans l'annuaire")
+	@APIResponse(responseCode="404", description="Individu non trouvée")
 	public JsonObject sayHelloJson() {
 		JsonObjectBuilder builder = Json.createObjectBuilder();
 		builder.add("message", "Hello World");
