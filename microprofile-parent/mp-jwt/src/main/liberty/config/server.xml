@@ -13,8 +13,8 @@
     <application location="/opt/workspace/2018-12/microprofile_lb/microprofile-universite-demo/microprofile-parent/mp-jwt/target/mp-jwt.war" context-root="/"/>
 
 
-    <keyStore id="defaultKeyStore" location="keystore.jks" type="JKS" password="atbash" />
+    <!-- <keyStore id="defaultKeyStore" location="keystore.jks" type="JKS" password="secret" /> -->
 
-    <mpJwt id="jwtUserConsumer" keyName="default" audiences="mp-app,account" issuer="${jwt.issuer}" 
-    	jwksUri="${jwt.jwksUri}" userNameAttribute="upn" />
+    <!-- <mpJwt id="jwtUserConsumer" keyName="default" audiences="mp-app,account" issuer="${jwt.issuer}" 
+    	jwksUri="${jwt.jwksUri}" userNameAttribute="upn" /> -->
 </server>
