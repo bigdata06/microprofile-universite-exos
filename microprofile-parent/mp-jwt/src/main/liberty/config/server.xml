@@ -3,7 +3,7 @@
 
     <featureManager>
     	<feature>jaxRs-2.1</feature>
-        <!-- <feature>mpJwt-1.1</feature> -->
+        <feature>mpJwt-1.1</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
@@ -15,6 +15,6 @@
 
     <!-- <keyStore id="defaultKeyStore" location="keystore.jks" type="JKS" password="secret" /> -->
 
-    <!-- <mpJwt id="jwtUserConsumer" keyName="default" audiences="mp-app,account" issuer="${jwt.issuer}" 
-    	jwksUri="${jwt.jwksUri}" userNameAttribute="upn" /> -->
+    <mpJwt id="jwtUserConsumer" keyName="default" audiences="mp-app,account" issuer="${jwt.issuer}" 
+    	jwksUri="${jwt.jwksUri}" userNameAttribute="preferred_username" />
 </server>

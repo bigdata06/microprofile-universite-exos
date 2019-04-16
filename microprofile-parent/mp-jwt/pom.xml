@@ -13,6 +13,11 @@
 
 	<name>MicroProfile : JWT</name>
 
+	<properties>
+		<jwt.issuer>https://localhost:58443/auth/realms/DEMO</jwt.issuer>
+		<jwt.jwksUri>http://localhost:58080/auth/realms/DEMO/protocol/openid-connect/certs</jwt.jwksUri>
+	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.microprofile</groupId>
