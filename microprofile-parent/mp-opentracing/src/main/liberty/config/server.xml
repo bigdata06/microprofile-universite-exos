@@ -4,11 +4,11 @@
 		<feature>jaxrs-2.1</feature>
 		<feature>cdi-2.0</feature>
 		<feature>mpMetrics-1.1</feature>
-		<!-- <feature>mpOpenTracing-1.1</feature>
-		<feature>usr:opentracingZipkin-0.31</feature>-->
+		<feature>mpOpenTracing-1.1</feature>
+		<feature>usr:opentracingZipkin-0.31</feature>
   </featureManager>
 
-  <!-- <opentracingZipkin host="192.168.32.230"/> -->
+  <opentracingZipkin host="192.168.32.230"/>
  
   <httpEndpoint id="defaultHttpEndpoint"
                   httpPort="${httpPort}"
