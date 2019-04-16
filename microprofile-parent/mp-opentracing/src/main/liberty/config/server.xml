@@ -1,23 +1,24 @@
 <server description="Sample Liberty server">
 
   <featureManager>
-    <feature>jaxrs-2.1</feature>
-    <!-- 
-    <feature>mpOpenTracing-1.1</feature>
-    <feature>usr:opentracingZipkin-0.31</feature>
- 	   -->
+		<feature>jaxrs-2.1</feature>
+		<feature>cdi-2.0</feature>
+		<feature>mpMetrics-1.1</feature>
+		<!-- <feature>mpOpenTracing-1.1</feature>
+		<feature>usr:opentracingZipkin-0.31</feature>-->
   </featureManager>
 
+  <!-- <opentracingZipkin host="192.168.32.230"/> -->
+ 
   <httpEndpoint id="defaultHttpEndpoint"
                   httpPort="${httpPort}"
                   httpsPort="${httpsPort}"/>
 
   <application
 		location="${project.build.directory}/${project.build.finalName}.war" context-root="/">
-      <!-- <classloader apiTypeVisibility="api,ibm-api,spec,stable,third-party"/> -->
+      <classloader apiTypeVisibility="api,ibm-api,spec,stable,third-party"/>
   </application>
 
   <!-- <logging traceSpecification="*=info:com.ibm.ws.opentracing*=all:com.ibm.ws.microprofile.opentracing*=all"/> -->
 
-  <!-- <opentracingZipkin host="192.168.32.230"/> -->
 </server>
