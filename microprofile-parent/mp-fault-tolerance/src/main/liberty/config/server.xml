@@ -2,8 +2,10 @@
 <server description="mpServer">
 
     <featureManager>
-    	<feature>jaxRs-2.1</feature>
-        <!-- <feature>mpFaultTolerance-2.0</feature> -->
+    	<!-- <feature>jaxRs-2.1</feature>
+        <feature>mpFaultTolerance-2.0</feature>
+        <feature>mpMetrics-1.1</feature> -->
+        <feature>microprofile-2.2</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
@@ -12,4 +14,5 @@
 
     <application location="${project.build.directory}/${project.build.finalName}.war" context-root="/"/>
 
+	<quickStartSecurity userName="admin" userPassword="password" />
 </server>
