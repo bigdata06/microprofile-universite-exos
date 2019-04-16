@@ -7,13 +7,14 @@
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
-                  httpPort="${httpPort}"
-                  httpsPort="${httpsPort}"/>
+                  httpPort="9080"
+                  httpsPort="9443"/>
 
-    <application location="${project.build.directory}/${project.build.finalName}.war" context-root="/"/>
+    <application location="/opt/workspace/2018-12/microprofile_lb/microprofile-universite-demo/microprofile-parent/mp-jwt/target/mp-jwt.war" context-root="/"/>
 
 
-    <!-- <keyStore id="defaultKeyStore" location="keystore.jceks" type="JCEKS" password="secret" /> -->
+    <keyStore id="defaultKeyStore" location="keystore.jks" type="JKS" password="atbash" />
 
-   <!--  <mpJwt id="jwtUserConsumer" keyName="default" audiences="simpleapp" issuer="${jwt.issuer}"/> -->
+    <mpJwt id="jwtUserConsumer" keyName="default" audiences="mp-app,account" issuer="${jwt.issuer}" 
+    	jwksUri="${jwt.jwksUri}" userNameAttribute="upn" />
 </server>
